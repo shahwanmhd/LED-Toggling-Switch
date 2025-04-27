@@ -42,7 +42,7 @@ int main(void)
     GPIOX_MODER_t *gpioa_moder = GPIOA_MODER_ADDR;
     gpioa_moder->pmode_0 = 0x0; // Input Mode
 
-    // Enable internal Pull-up for PA0
+    // Enable internal Pull-down for PA0
     GPIOX_PUP_t *gpioa_pup = GPIOA_PUP_ADDR;
     gpioa_pup->pup_0 = 0x2; // Pull-Down
 
